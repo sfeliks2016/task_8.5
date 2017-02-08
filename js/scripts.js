@@ -1,36 +1,20 @@
 // scripts.js
 
-//var foo = 'lorem' + 'Ipsum';
-var question = prompt('Lubisz truskawki ?');
-var selectedTab = 'details';
-var foo = 'lorem' + ['1', 2, 3.4];   
-var bar = (foo + 1),
-    person = {
-        name: 'Jon',
-        surname: 'Snow',
-        siblings: 5,
-        knownThings: ['Nothing', 'Night Watch']
-    };
+var a = 1;
+var b = 3;
+var value = ((a * a) + (2 * a * b) - (b * b));
 
-if (selectedTab === 'details') {
-    console.log('Wybrana zakładka to detale');
-} else if (selectedTab === 'comments') {
-    console.log('Wybrana zakładka to komentarze');
-} else {
-    console.log('Wybrana zakładka opis produktu');
-}
+(value > 0) ? console.log('wynik dodatni') : console.log('wynik ujemny');
+    
+console.log(value);
 
-switch (question.toLowerCase()) {
-case 'tak':
-    alert('Świetnie, ja też!');
+switch (value) {
+case 0:
+    console.log('wynik jest równy zero');
     break;
-case 'nie':
-    alert('Jak można nie lubić truskawek?');
-    break;
+
 default:
-    alert('Nie dałeś jednoznacznej odpowiedzi, więc pewnie jeszcze się zastanawiasz.');
+    console.log('wynik inny niz zero');
 }
-console.log(foo);
-console.log(bar);
-console.log(person);            
+        
     
